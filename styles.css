@@ -1,0 +1,59 @@
+.style {
+    border: 1.5px solid black;
+}
+
+:root {
+    --primary-color: #36354f;
+    --secondary-color: #00a86b;
+    --tertiary-color: #b2dfdb;
+    --text-color: #313131;
+    --white: #fff;
+}
+
+* {
+    font-family: "Lato", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    line-height: 1.5;
+    color: var(--text-color);
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+header {
+    background: var(--primary-color);
+}
+
+.title {
+    text-align: center;
+    font-size: 3rem;
+    margin: 0;
+    padding: 0.5rem;
+    color: var(--white);
+}
+
+.link {
+    text-align: center;
+    font-size: 2rem;
+    background: var(--secondary-color);
+    color: var(--white);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.link:hover {
+    background: var(--tertiary-color);
+}
+
+.component {
+    height: 100vh;
+}
