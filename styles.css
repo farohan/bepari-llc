@@ -36,6 +36,7 @@ header {
 .title {
     text-align: center;
     font-size: 3rem;
+    font-family: "Karla", Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0.5rem;
     color: var(--white);
@@ -55,5 +56,28 @@ header {
 }
 
 .component {
-    height: 100vh;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--primary-color);
+    color: var(--white);
+}
+
+.component-title {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.component-image {
+    height: 30%;
+}
+
+.component-description {
+    width: 50%;
+}
+
+.list-item {
+    margin-bottom: 20%;
 }
