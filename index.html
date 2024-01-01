@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     <link rel="stylesheet" href="styles.css">
     <title>Bepari LLC</title>
 </head>
 <body>
     <header>
         <section class="title-box">
-            <h1 class="title">Bepari LLC</h1>
+            <em><h1 class="title">Bepari LLC</h1></em>
         </section>
         <nav>
             <div class="link">General Information</div>
@@ -23,22 +25,34 @@
         </nav>
     </header>
     <section class="component general-information">
-        <h2 class="component-title">General Information</h2>
+        <h2 class="component-title" data-aos="zoom-in">General Information</h2>
+        <ul class="list">
+            <li class="list-item" data-aos="fade-left">Name: Bepari LLC</li>
+            <li class="list-item" data-aos="fade-left">Year Founded: 2023</li>
+            <li class="list-item" data-aos="fade-left">Agent Name: Nazim Uddin</li>
+        </ul>
     </section>
-    <section class="component about-the-agent">
-        <h2 class="component-title">About the Agent</h2>
+    <section class="component about-the-agent style">
+        <h2 class="component-title" data-aos="zoom-in">About the Agent</h2>
+        <img class="component-image" src="https://avatars.githubusercontent.com/u/43047551?v=4" alt="A portrait image of the LLC agent">
+        <div class="component-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam praesentium quae minima eum tempora natus tempore commodi reiciendis soluta rerum. Nobis quia porro modi nihil alias quos culpa reprehenderit iure tenetur consectetur voluptatibus quisquam, beatae accusantium, sequi ipsum a harum minima magnam ullam totam. Rem, repellendus corporis. Provident, tempora eligendi.</div>
     </section>
     <section class="component business-description">
-        <h2 class="component-title">Business Description</h2>
+        <h2 class="component-title" data-aos="zoom-in">Business Description</h2>
     </section>
     <section class="component competitive-advantage">
-        <h2 class="component-title">Competitive Advantage</h2>
+        <h2 class="component-title" data-aos="zoom-in">Competitive Advantage</h2>
     </section>
     <section class="component beneficial-fact">
-        <h2 class="component-title">Beneficial Facts</h2>
+        <h2 class="component-title" data-aos="zoom-in">Beneficial Facts</h2>
     </section>
     <section class="component contact-us">
-        <h2 class="component-title">Contact Us</h2>
+        <h2 class="component-title" data-aos="zoom-in">Contact Us</h2>
     </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
