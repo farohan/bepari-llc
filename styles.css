@@ -67,17 +67,56 @@ header {
 
 .component-title {
     font-size: 3rem;
+    margin-bottom: 0;
     text-align: center;
 }
 
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .component-image {
-    height: 30%;
+    margin-bottom: 5%;
 }
 
 .component-description {
-    width: 50%;
+    width: 90%;
+    text-align: left;
+    text-indent: 10%;
+    padding: 5%;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 1rem;
+}
+
+.adjacent-top {
+    padding-bottom: 1%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.adjacent-bottom {
+    padding-top: 1%;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
 }
 
 .list-item {
     margin-bottom: 20%;
+}
+
+.special-padding {
+    padding-bottom: 5%;
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 2rem;
+    padding: 1%;
+    background: var(--secondary-color);
+    color: var(--white);
 }
