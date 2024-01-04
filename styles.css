@@ -1,7 +1,3 @@
-.style {
-    border: 1.5px solid black;
-}
-
 :root {
     --primary-color: #36354f;
     --secondary-color: #00a86b;
@@ -24,9 +20,14 @@ html {
 body {
     margin: 0;
     line-height: 1.5;
+    background: var(--primary-color);
     color: var(--text-color);
     overflow-x: hidden;
     overflow-y: auto;
+}
+
+a {
+    color: white;
 }
 
 header {
@@ -55,6 +56,10 @@ header {
     background: var(--tertiary-color);
 }
 
+.link > a {
+    text-decoration: none;
+}
+
 .component {
     font-size: 2rem;
     display: flex;
@@ -79,6 +84,7 @@ header {
 }
 
 .component-image {
+    border-radius: 5%;
     margin-bottom: 5%;
 }
 
@@ -119,4 +125,54 @@ footer {
     padding: 1%;
     background: var(--secondary-color);
     color: var(--white);
+}
+
+.special {
+    margin-bottom: 0;
+}
+
+@media screen and (min-width: 850px) {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+
+    .link {
+        width: 100%;
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.6rem;
+    }
+
+    .component {
+        margin-top: 2rem;
+        margin-bottom: 5rem;
+    }
+    
+    .component-title {
+        margin-bottom: 3vh;
+    }
+
+    .about-the-agent > .content > .component-description {
+        width: 50%;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .component-image {
+        margin-bottom: 0;
+        margin-right: 5%;
+    }
+
+    .component-description {
+        width: 70%;
+    }
 }
